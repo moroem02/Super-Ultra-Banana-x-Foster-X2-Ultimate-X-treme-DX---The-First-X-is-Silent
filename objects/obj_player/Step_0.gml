@@ -83,13 +83,18 @@ if(hsp != 0){
 	image_xscale = sign(hsp);
 }
 
+// shooting
 if(keyboard_check_pressed(ord("Z"))){
 	var inst = instance_create_layer(obj_gun.x, obj_gun.y, "Instances", obj_bullet);
 	inst.direction = obj_gun.direction;
-	if(obj_gun.direction == 270 && (place_meeting(x,y+20,obj_wall) || 1)){//recoils
+	if(obj_gun.direction == 270 && place_meeting(x,y+20,obj_wall)){
 		vsp = -5;
+	}
+	if(obj_gun.direction == 270 && !place_meeting(x,y+20,obj_wall) && obj_gun.recoils > 0){
+		obj_gun.recoils  -=1;	
+		vsp = -6;
 	}
 	
 }
-obj_gun.x = x;
+obj_gun.x = x+2;
 obj_gun.y = y;
