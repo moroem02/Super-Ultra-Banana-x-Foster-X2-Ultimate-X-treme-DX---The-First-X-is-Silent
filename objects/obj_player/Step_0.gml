@@ -2,14 +2,9 @@
 
 
 //get player input
-if(!keyboard_check(ord("X"))){
-	var key_left = keyboard_check(vk_left);
-	var key_right = keyboard_check(vk_right);
-}
-else{
-	var key_left = 0;
-	var key_right = 0;
-}
+
+var key_left = keyboard_check(vk_left);
+var key_right = keyboard_check(vk_right);
 
 var key_jump = keyboard_check_pressed(vk_space);
 //calc ulate movement
@@ -96,7 +91,7 @@ if(hsp != 0){
 }
 
 // shooting
-if(keyboard_check_pressed(ord("Z"))){
+if(keyboard_check(ord("Z")) && reload <= 0){
 	var inst = instance_create_layer(obj_gun.x, obj_gun.y, "Instances", obj_bullet);
 	inst.direction = obj_gun.direction;
 	if(obj_gun.direction == 270 && place_meeting(x,y+20,obj_wall)){
@@ -157,7 +152,8 @@ if(keyboard_check_pressed(ord("Z"))){
 		y-= 5;
 		horiframes = -15;
 	}
-	
+	reload = 10;
 }
+reload --;
 obj_gun.x = x+2;
 obj_gun.y = y;
