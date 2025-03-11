@@ -1,4 +1,4 @@
-//@desc - player controls + collision
+// @desc - player controls + collision
 
 
 //get player input
@@ -10,14 +10,25 @@ else{
 	var key_left = 0;
 	var key_right = 0;
 }
+
 var key_jump = keyboard_check_pressed(vk_space);
 //calc ulate movement
 
 
 var _move = key_right - key_left;
 
-
-hsp = _move * walksp;
+if(horiframes == 0 || place_meeting(x,y+5,obj_wall)){
+	hsp = _move * walksp;
+	horiframes = 0;
+}
+else if(horiframes < 0){
+	horiframes += 1;
+	hsp = -7;
+}
+else{
+	horiframes -= 1;
+	hsp = 7;	
+}
 vsp += grv;
 
 //Jump
@@ -58,7 +69,7 @@ if(!place_meeting(x,y+1,obj_wall)){
 	//in air
 	sprite_index = spr_player;
 	image_speed = 0;
-	obj_gun.recoils = 1;
+	
 	if(vsp > 0){
 		image_index = 1;	
 	}
@@ -69,6 +80,7 @@ if(!place_meeting(x,y+1,obj_wall)){
 }
 
 else{
+	recoils = 1;
 	image_speed = 1;
 	if(hsp == 0){
 		sprite_index = spr_player
@@ -90,9 +102,60 @@ if(keyboard_check_pressed(ord("Z"))){
 	if(obj_gun.direction == 270 && place_meeting(x,y+20,obj_wall)){
 		vsp = -5;
 	}
-	if(obj_gun.direction == 270 && !place_meeting(x,y+20,obj_wall) && obj_gun.recoils > 0){
-		obj_gun.recoils  -=1;	
+	//updown left
+	if(obj_gun.direction == 270 && !place_meeting(x,y+20,obj_wall) && recoils > 0){
+		recoils  -=1;	
+		vsp = -7;
+	}
+	if(obj_gun.direction == 0 && !place_meeting(x,y+20,obj_wall) && recoils > 0){
+		recoils  -=1;	
+		horiframes = -15;
+		
+	}
+	if(obj_gun.direction == 180 && !place_meeting(x,y+20,obj_wall) && recoils > 0){
+		recoils  -=1;	
+		horiframes = 15;
+		
+	}
+	if(obj_gun.direction == 90 && !place_meeting(x,y+20,obj_wall) && recoils > 0){
+		recoils  -=1;	
+		vsp = 7;
+	}
+	
+	//diag
+	if(obj_gun.direction == 315 && !place_meeting(x,y+20,obj_wall) && recoils > 0){
+		recoils  -=1;	
+		vsp = -7;
+		horiframes = -15;
+	}
+	if(obj_gun.direction == 45 && !place_meeting(x,y+20,obj_wall) && recoils > 0){
+		recoils  -=1;	
+		vsp = 7;
+		horiframes = -15;
+		
+	}
+	if(obj_gun.direction == 135 && !place_meeting(x,y+20,obj_wall) && recoils > 0){
+		recoils  -=1;	
+		horiframes = 15;
+		vsp = 7;
+		
+	}
+	if(obj_gun.direction == 225 && !place_meeting(x,y+20,obj_wall) && recoils > 0){
+		recoils  -=1;	
+		vsp = -7;
+		horiframes = 15;
+	}
+	
+	
+	if(obj_gun.direction == 225 && place_meeting(x,y+20,obj_wall) && recoils > 0){
 		vsp = -6;
+		y-= 5;
+		horiframes = 15;
+	}
+	if(obj_gun.direction == 315 && place_meeting(x,y+20,obj_wall) && recoils > 0){
+		vsp = -6;
+		y-= 5;
+		horiframes = -15;
 	}
 	
 }

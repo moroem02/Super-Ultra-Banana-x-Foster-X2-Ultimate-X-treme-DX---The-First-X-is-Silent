@@ -1,2 +1,2 @@
-//desc - destroys when colides. 
+// @desc - destroys when colides. 
 instance_destroy()
