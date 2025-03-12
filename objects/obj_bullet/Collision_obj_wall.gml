@@ -1,2 +1,4 @@
 // @desc - destroys when colides. 
-instance_destroy()
+if(!other.touching_break){
+	instance_destroy();
+}

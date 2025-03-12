@@ -1,5 +1,6 @@
 if(distance_to_object(obj_target) < 500){
-	if(obj_target.image_index == 1){
+	var inst = instance_nearest(x, y, obj_target)
+	if(inst.image_index == 1){
 		y -= 2;	
 		go = true;
 	}
