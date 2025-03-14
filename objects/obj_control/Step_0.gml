@@ -36,3 +36,7 @@ if(room !=rm_end && room != rm_start){
 	}
 }
 global.resp --;
+
+if(room == rm_Level_1 && !(audio_is_playing(snd_lab1) || audio_is_playing(snd_lab2))){
+	audio_play_sound(snd_lab2, 1, true)	
+}

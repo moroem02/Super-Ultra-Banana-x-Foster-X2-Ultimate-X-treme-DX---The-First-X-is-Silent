@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_catwav",
+  "%Name":"snd_death",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":9.230771,
-  "name":"snd_catwav",
+  "duration":0.528889,
+  "name":"snd_death",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_catwav.wav",
+  "soundFile":"snd_death.wav",
   "type":0,
-  "volume":0.84,
+  "volume":0.42,
 }

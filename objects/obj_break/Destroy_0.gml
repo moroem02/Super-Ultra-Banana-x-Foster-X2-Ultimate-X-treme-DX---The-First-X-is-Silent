@@ -6,3 +6,4 @@ global.breakables[array_length(global.breakables)] = image_yscale;
 repeat(100){
 	var inst = instance_create_layer(x,y,"Instances", obj_part_black);	
 }
+audio_play_sound(snd_explosion,2,false);

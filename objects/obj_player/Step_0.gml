@@ -37,6 +37,7 @@ if(place_meeting(x,y+1,obj_wall)){
 if(key_jump && currJumps < maxJumps){
 		vsp = -jumpsp;
 		currJumps += 1
+		audio_play_sound(snd_whoo,2,false);
 }
 
 //hor. collision
@@ -92,6 +93,7 @@ if(hsp != 0){
 
 // shooting
 if(keyboard_check(ord("Z")) && reload <= 0){
+	audio_play_sound(snd_shoot,2,false);
 	var inst = instance_create_layer(obj_gun.x, obj_gun.y, "Instances", obj_bullet);
 	inst.direction = obj_gun.direction;
 	if(obj_gun.direction == 270 && place_meeting(x,y+20,obj_wall)){

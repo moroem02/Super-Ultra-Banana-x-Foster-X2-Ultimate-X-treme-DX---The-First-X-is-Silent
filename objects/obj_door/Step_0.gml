@@ -13,5 +13,10 @@ if(go){
 	if(global.resp > 0){
 		instance_destroy();	
 	}
-	y -= 2;		
+	if(image_angle == 90){
+		x += 2;
+	}
+	else{
+		y -= 2;	
+	}
 }
