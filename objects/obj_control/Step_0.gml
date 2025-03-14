@@ -1,4 +1,4 @@
-if(room !=rm_end && room != rm_start){
+if(room !=rm_end && room != rm_start  && room != rm_intro){
 	if(instance_number(obj_player) == 0){
 		global.resp = 5;
 		
