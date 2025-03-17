@@ -1,2 +1,2 @@
 reload = 45;
-rspeed =3;
+rspeed =4;
