@@ -18,14 +18,15 @@ if(horiframes == 0 || place_meeting(x,y+5,obj_wall)){
 }
 else if(horiframes < 0){
 	horiframes += 1;
-	hsp = -7;
+	hsp = -9;
 }
 else{
 	horiframes -= 1;
-	hsp = 7;	
+	hsp = 9;	
 }
-vsp += grv;
-
+if(horiframes/1.2 <= 1){
+	vsp += grv;
+}
 //Jump
 
 
@@ -96,6 +97,7 @@ if(keyboard_check(ord("Z")) && reload <= 0){
 	audio_play_sound(snd_shoot,2,false);
 	var inst = instance_create_layer(obj_gun.x, obj_gun.y, "Instances", obj_bullet);
 	inst.direction = obj_gun.direction;
+	inst.enemy = false;
 	if(obj_gun.direction == 270 && place_meeting(x,y+20,obj_wall)){
 		vsp = -5;
 	}
@@ -107,11 +109,13 @@ if(keyboard_check(ord("Z")) && reload <= 0){
 	if(obj_gun.direction == 0 && !place_meeting(x,y+20,obj_wall) && recoils > 0){
 		recoils  -=1;	
 		horiframes = -15;
+		vsp = 0;
 		
 	}
 	if(obj_gun.direction == 180 && !place_meeting(x,y+20,obj_wall) && recoils > 0){
 		recoils  -=1;	
 		horiframes = 15;
+		vsp = 0;
 		
 	}
 	if(obj_gun.direction == 90 && !place_meeting(x,y+20,obj_wall) && recoils > 0){
@@ -159,3 +163,8 @@ if(keyboard_check(ord("Z")) && reload <= 0){
 reload --;
 obj_gun.x = x+2;
 obj_gun.y = y;
+
+//death
+if(hits < 1){
+	instance_destroy();	
+}

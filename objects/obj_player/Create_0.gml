@@ -11,3 +11,4 @@ _move = 0;
 horiframes = 0;
 recoils = 1;
 reload = 0;
+hits = 3;
