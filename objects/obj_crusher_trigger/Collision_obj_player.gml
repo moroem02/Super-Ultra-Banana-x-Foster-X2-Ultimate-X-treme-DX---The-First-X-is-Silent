@@ -1,0 +1,1 @@
+obj_crusher.go = true;

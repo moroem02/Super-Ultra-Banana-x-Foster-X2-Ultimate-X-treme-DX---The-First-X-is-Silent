@@ -31,6 +31,12 @@ if(room !=rm_end && room != rm_start  && room != rm_intro){
 		
 		global.breakables = [];
 		global.doors = [];
+		if(room == rm_Level_3){
+			obj_crusher.go = false;
+			obj_crusher.x = global.respawn_x-176;
+			obj_camera.x = global.respawn_x+272;
+			obj_crusher.x = global.respawn_x+160;
+		}
 		instance_create_layer(global.respawn_x,global.respawn_y, "Instances", obj_player);		
 		
 	}
