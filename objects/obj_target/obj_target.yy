@@ -8,8 +8,8 @@
   "name":"obj_target",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Particle Systems",
+    "path":"folders/Particle Systems.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,11 +1,19 @@
+obj_player.x = x;
+obj_player.y = y;
 
-instance_destroy();
-if(other.vsp > 0){
-	other.x = instance_nearest(other.x, other.y, obj_portal).x + 33;
+if(instance_number(obj_crusher)>0){
+	obj_crusher.go = false;	
+}
+if(image_xscale < 300){
+	image_xscale += 5;
+	image_yscale += 5;
 }
 else{
 	
-	other.x = instance_nearest(other.x, other.y, obj_portal).x - 33;
+	x = 2944;
+	y = 128;
+	instance_destroy();
+	obj_player.x = 	2944;
+	obj_player.y = 	228;
+	
 }
-other.y =instance_nearest(other.x, other.y, obj_portal).y;
-instance_create_layer(x,y,"Instances",obj_portal)
