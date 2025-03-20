@@ -2,7 +2,7 @@
 play = true;
 global.respawn_x = 320;
 global.respawn_y = 304;
-l = 2;
+l = 0;
 levels = [rm_Level_1,rm_Level_2,rm_Level_3];
 global.breakables = [];
 global.doors = [];
