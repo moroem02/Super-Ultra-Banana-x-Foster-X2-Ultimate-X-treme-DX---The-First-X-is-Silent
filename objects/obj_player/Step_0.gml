@@ -64,7 +64,7 @@ x += hsp;
 //animations
 if(!place_meeting(x,y+1,obj_wall)){
 	//in air
-	sprite_index = spr_player;
+	sprite_index = spr_playera;
 	image_speed = 0;
 	
 	if(vsp > 0){
@@ -80,11 +80,11 @@ else{
 	recoils = 1;
 	image_speed = 1;
 	if(hsp == 0){
-		sprite_index = spr_player
+		sprite_index = spr_playera;
 		
 	}
 	else{
-		sprite_index = spr_player;
+		sprite_index = spr_playera;
 	}
 }
 
@@ -161,9 +161,34 @@ if(keyboard_check(ord("Z")) && reload <= 0){
 	reload = 10;
 }
 reload --;
-obj_gun.x = x+2;
-obj_gun.y = y;
 
+if(image_xscale > 0){
+	if(obj_gun.direction == 0){
+		obj_gun.image_xscale = 1;
+		obj_gun.image_index = 0;
+		obj_gun.x = x+16;
+		obj_gun.y = y+19;
+	}
+	else if(obj_gun.direction == 90){
+		obj_gun.image_xscale = 1;
+		obj_gun.image_index = 0;
+		obj_gun.x = x+20;
+		obj_gun.y = y+21;
+	}
+	else if(obj_gun.direction ==270){
+		obj_gun.image_xscale = -1;
+		obj_gun.image_index = 0;
+		obj_gun.x = x+20;
+		obj_gun.y = y+16;
+	}
+	else if(obj_gun.direction == 180){
+		obj_gun.image_xscale = -1;
+		obj_gun.image_index = 1;
+		obj_gun.x = x+19;
+		obj_gun.y = y+18;
+	}
+	
+}
 //death
 if(hits < 1){
 	instance_destroy();	

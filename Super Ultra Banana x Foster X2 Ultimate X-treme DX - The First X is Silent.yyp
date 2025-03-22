@@ -91,6 +91,7 @@
     {"id":{"name":"spr_particle_black","path":"sprites/spr_particle_black/spr_particle_black.yy",},},
     {"id":{"name":"spr_particle_green","path":"sprites/spr_particle_green/spr_particle_green.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
+    {"id":{"name":"spr_playera","path":"sprites/spr_playera/spr_playera.yy",},},
     {"id":{"name":"spr_plok_door","path":"sprites/spr_plok_door/spr_plok_door.yy",},},
     {"id":{"name":"spr_portal","path":"sprites/spr_portal/spr_portal.yy",},},
     {"id":{"name":"spr_press","path":"sprites/spr_press/spr_press.yy",},},

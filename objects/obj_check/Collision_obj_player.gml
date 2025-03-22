@@ -6,5 +6,5 @@ if(image_index != 1){
 	}
 	image_index = 1;
 	global.respawn_x = x;
-	global.respawn_y = y - 5;
+	global.respawn_y = y - 15;
 }

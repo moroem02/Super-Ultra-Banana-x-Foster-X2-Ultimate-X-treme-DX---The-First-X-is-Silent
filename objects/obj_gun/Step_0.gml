@@ -20,7 +20,7 @@ if(pause <= 0 && !keyboard_check(ord("X"))){
 	}
 	else if(keyboard_check(vk_down)&& !(keyboard_check(vk_left) || keyboard_check(vk_right))){
 		direction = 270;
-		image_angle = 270;
+		image_angle = 90;
 		image_xscale = 1;
 		image_yscale = 1;
 	}
