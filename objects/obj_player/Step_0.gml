@@ -165,27 +165,60 @@ reload --;
 if(image_xscale > 0){
 	if(obj_gun.direction == 0){
 		obj_gun.image_xscale = 1;
+		obj_gun.image_angle = 0;
 		obj_gun.image_index = 0;
 		obj_gun.x = x+16;
 		obj_gun.y = y+19;
 	}
+	
 	else if(obj_gun.direction == 90){
 		obj_gun.image_xscale = 1;
 		obj_gun.image_index = 0;
+		obj_gun.image_angle = 90;
 		obj_gun.x = x+20;
 		obj_gun.y = y+21;
 	}
 	else if(obj_gun.direction ==270){
 		obj_gun.image_xscale = -1;
 		obj_gun.image_index = 0;
+		obj_gun.image_angle = 90;
 		obj_gun.x = x+20;
 		obj_gun.y = y+16;
 	}
 	else if(obj_gun.direction == 180){
 		obj_gun.image_xscale = -1;
 		obj_gun.image_index = 1;
+		obj_gun.image_angle = 0;
 		obj_gun.x = x+19;
 		obj_gun.y = y+18;
+	}
+	else if(obj_gun.direction == 135){
+		obj_gun.image_xscale = -1;
+		obj_gun.image_index = 0;
+		obj_gun.image_angle = 225;
+		obj_gun.x = x+21;
+		obj_gun.y = y+32;
+	}
+	else if(obj_gun.direction == 45){
+		obj_gun.image_xscale = 1;
+		obj_gun.image_index = 0;
+		obj_gun.image_angle = 45;
+		obj_gun.x = x+16;
+		obj_gun.y = y+19;
+	}
+	else if(obj_gun.direction == 315){
+		obj_gun.image_xscale = 1;
+		obj_gun.image_index = 0;
+		obj_gun.image_angle = 315;
+		obj_gun.x = x+17;
+		obj_gun.y = y+16;
+	}
+	else if(obj_gun.direction == 225){
+		obj_gun.image_xscale = -1;
+		obj_gun.image_angle = -135;
+		obj_gun.image_index = 1;
+		obj_gun.x = x+20;
+		obj_gun.y = y+19;
 	}
 	
 }
