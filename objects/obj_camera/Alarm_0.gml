@@ -1,0 +1,1 @@
+room_goto(obj_control.levels[obj_control.l]);

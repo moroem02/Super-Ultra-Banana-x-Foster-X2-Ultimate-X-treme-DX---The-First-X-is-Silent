@@ -1,6 +1,25 @@
-if(instance_number(obj_player) != 0){
-	y = obj_player.y;
+
+if(!stop){
+	if(obj_control.l == 0){
+		stop = true;
+		
+	}
+	else if(obj_control.l == 1){
+		if(x>= 564){
+			stop = true;	
+		}
+		x+= 4;
+	}
+	else if(obj_control.l == 2){
+		if(x>= 1100){
+			stop = true;	
+		}
+		x+= 4;
+	}
+	alarm[0] = 120;
 }
-if(obj_crusher.go){
-	x+= 3;
-}
+
+var lay_id = layer_get_id("Background");
+var back_id = layer_background_get_id(lay_id);
+
+layer_background_index(back_id, obj_control.l);

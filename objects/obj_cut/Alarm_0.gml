@@ -1,2 +1,2 @@
-room_goto(rm_Level_1);	
+room_goto(rm_map);	
 audio_stop_all()

@@ -1,2 +1,2 @@
-room_goto(obj_control.levels[obj_control.l]);	
+room_goto(rm_map);	
 audio_stop_all()

@@ -6,5 +6,5 @@ if(obj_control.l >= array_length(obj_control.levels)){
 	room_goto(rm_end);
 }
 else{
-	room_goto(obj_control.levels[obj_control.l]);
+	room_goto(rm_map);
 }
