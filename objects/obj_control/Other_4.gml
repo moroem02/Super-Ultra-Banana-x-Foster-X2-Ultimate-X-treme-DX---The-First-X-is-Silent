@@ -9,7 +9,7 @@ else if(room == rm_Level_2){
 	audio_play_sound(snd_wind,1,true);
 }
 else if(room == rm_Level_3){
-	global.respawn_y =1504;
+	global.respawn_y =928;
 	global.respawn_x = 256;
 	audio_play_sound(snd_wind,1,true);
 }

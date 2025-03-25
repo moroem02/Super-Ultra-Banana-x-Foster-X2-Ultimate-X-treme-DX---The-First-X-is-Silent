@@ -90,12 +90,13 @@ else{
 
 if(hsp != 0){
 	image_xscale = sign(hsp);
+	
 }
 
 // shooting
 if(keyboard_check(ord("Z")) && reload <= 0){
 	audio_play_sound(snd_shoot,2,false);
-	var inst = instance_create_layer(obj_gun.x, obj_gun.y, "Instances", obj_bullet);
+	var inst = instance_create_layer(obj_gun.x +sign(obj_gun.image_xscale)*15, obj_gun.y-5, "Instances", obj_bullet);
 	inst.direction = obj_gun.direction;
 	inst.enemy = false;
 	if(obj_gun.direction == 270 && place_meeting(x,y+20,obj_wall)){
@@ -195,9 +196,9 @@ if(image_xscale > 0){
 	else if(obj_gun.direction == 135){
 		obj_gun.image_xscale = -1;
 		obj_gun.image_index = 0;
-		obj_gun.image_angle = 225;
+		obj_gun.image_angle = 315;
 		obj_gun.x = x+21;
-		obj_gun.y = y+32;
+		obj_gun.y = y+22;
 	}
 	else if(obj_gun.direction == 45){
 		obj_gun.image_xscale = 1;
@@ -215,13 +216,74 @@ if(image_xscale > 0){
 	}
 	else if(obj_gun.direction == 225){
 		obj_gun.image_xscale = -1;
-		obj_gun.image_angle = -135;
+		obj_gun.image_angle = 45;
 		obj_gun.image_index = 1;
 		obj_gun.x = x+20;
 		obj_gun.y = y+19;
 	}
 	
 }
+else{
+	if(obj_gun.direction == 0){
+		obj_gun.image_xscale = 1;
+		obj_gun.image_angle = 0;
+		obj_gun.image_index = 1;
+		obj_gun.x = x+16-38;
+		obj_gun.y = y+19;
+	}
+	
+	else if(obj_gun.direction == 90){
+		obj_gun.image_xscale = -1;
+		obj_gun.image_index = 0;
+		obj_gun.image_angle = -90;
+		obj_gun.x = x+20-41;
+		obj_gun.y = y+23;
+	}
+	else if(obj_gun.direction ==270){
+		obj_gun.image_xscale = 1;
+		obj_gun.image_index = 0;
+		obj_gun.image_angle = 270;
+		obj_gun.x = x+20-40;
+		obj_gun.y = y+16;
+	}
+	else if(obj_gun.direction == 180){
+		obj_gun.image_xscale = -1;
+		obj_gun.image_index = 0;
+		obj_gun.image_angle = 0;
+		obj_gun.x = x+19-35;
+		obj_gun.y = y+18;
+	}
+	else if(obj_gun.direction == 135){
+		obj_gun.image_xscale = 1;
+		obj_gun.image_index = 0;
+		obj_gun.image_angle = 135;
+		obj_gun.x = x+21-38;
+		obj_gun.y = y+22;
+	}
+	else if(obj_gun.direction == 45){
+		obj_gun.image_xscale = 1;
+		obj_gun.image_index = 1;
+		obj_gun.image_angle = 45;
+		obj_gun.x = x+16-37;
+		obj_gun.y = y+20;
+	}
+	else if(obj_gun.direction == 315){
+		obj_gun.image_xscale = 1;
+		obj_gun.image_index = 1;
+		obj_gun.image_angle = 315;
+		obj_gun.x = x+17-38;
+		obj_gun.y = y+18;
+	}
+	else if(obj_gun.direction == 225){
+		obj_gun.image_xscale = -1;
+		obj_gun.image_angle = 45;
+		obj_gun.image_index = 0;
+		obj_gun.x = x+20-37;
+		obj_gun.y = y+16;
+	}
+}	
+	
+
 //death
 if(hits < 1){
 	instance_destroy();	

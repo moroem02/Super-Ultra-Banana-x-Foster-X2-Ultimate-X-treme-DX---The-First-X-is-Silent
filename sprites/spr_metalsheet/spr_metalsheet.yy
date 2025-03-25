@@ -19,6 +19,7 @@
   "height":128,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"24e20392-0f2f-49f1-abb5-8e9aa924f13c","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"24e20392-0f2f-49f1-abb5-8e9aa924f13c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"78797db9-fc5c-4bd3-a3de-849f431da19e","blendMode":0,"displayName":"default","isLocked":false,"name":"78797db9-fc5c-4bd3-a3de-849f431da19e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_metalsheet",

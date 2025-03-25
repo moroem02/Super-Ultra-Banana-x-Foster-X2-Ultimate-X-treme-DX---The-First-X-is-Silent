@@ -36,7 +36,7 @@ if(room !=rm_end && room != rm_start  && room != rm_intro &&room != rm_map){
 			obj_crusher.x = -64
 		}
 		instance_create_layer(global.respawn_x,global.respawn_y, "Instances", obj_player);		
-		
+		instance_create_layer(global.respawn_x,global.respawn_y, "Instances", obj_gun);		
 	}
 }
 global.resp --;
