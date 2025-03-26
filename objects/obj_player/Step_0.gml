@@ -64,7 +64,7 @@ x += hsp;
 //animations
 if(!place_meeting(x,y+1,obj_wall)){
 	//in air
-	sprite_index = spr_playera;
+	sprite_index = spr_playerjump;
 	image_speed = 0;
 	
 	if(vsp > 0){
@@ -84,7 +84,7 @@ else{
 		
 	}
 	else{
-		sprite_index = spr_playera;
+		sprite_index = spr_playerrun;
 	}
 }
 
@@ -96,7 +96,12 @@ if(hsp != 0){
 // shooting
 if(keyboard_check(ord("Z")) && reload <= 0){
 	audio_play_sound(snd_shoot,2,false);
-	var inst = instance_create_layer(obj_gun.x +sign(obj_gun.image_xscale)*15, obj_gun.y-5, "Instances", obj_bullet);
+	if(obj_gun.direction != 90 && obj_gun.direction != 270){
+		var inst = instance_create_layer(obj_gun.x +sign(obj_gun.image_xscale)*15, obj_gun.y-5, "Instances", obj_bullet);
+	}
+	else{
+		var inst = instance_create_layer(x , obj_gun.y-5, "Instances", obj_bullet);
+	}
 	inst.direction = obj_gun.direction;
 	inst.enemy = false;
 	if(obj_gun.direction == 270 && place_meeting(x,y+20,obj_wall)){
@@ -168,58 +173,58 @@ if(image_xscale > 0){
 		obj_gun.image_xscale = 1;
 		obj_gun.image_angle = 0;
 		obj_gun.image_index = 0;
-		obj_gun.x = x+16;
-		obj_gun.y = y+19;
+		obj_gun.x = x+16-15;
+		obj_gun.y = y+19-23;
 	}
 	
 	else if(obj_gun.direction == 90){
 		obj_gun.image_xscale = 1;
 		obj_gun.image_index = 0;
 		obj_gun.image_angle = 90;
-		obj_gun.x = x+20;
-		obj_gun.y = y+21;
+		obj_gun.x = x+20-15;
+		obj_gun.y = y+21-23;
 	}
 	else if(obj_gun.direction ==270){
 		obj_gun.image_xscale = -1;
 		obj_gun.image_index = 0;
 		obj_gun.image_angle = 90;
-		obj_gun.x = x+20;
-		obj_gun.y = y+16;
+		obj_gun.x = x+20-15;
+		obj_gun.y = y+16-23;
 	}
 	else if(obj_gun.direction == 180){
 		obj_gun.image_xscale = -1;
 		obj_gun.image_index = 1;
 		obj_gun.image_angle = 0;
-		obj_gun.x = x+19;
-		obj_gun.y = y+18;
+		obj_gun.x = x+19-15;
+		obj_gun.y = y+18-23;
 	}
 	else if(obj_gun.direction == 135){
 		obj_gun.image_xscale = -1;
 		obj_gun.image_index = 0;
 		obj_gun.image_angle = 315;
-		obj_gun.x = x+21;
-		obj_gun.y = y+22;
+		obj_gun.x = x+21-15;
+		obj_gun.y = y+22-23;
 	}
 	else if(obj_gun.direction == 45){
 		obj_gun.image_xscale = 1;
 		obj_gun.image_index = 0;
 		obj_gun.image_angle = 45;
-		obj_gun.x = x+16;
-		obj_gun.y = y+19;
+		obj_gun.x = x+16-15;
+		obj_gun.y = y+19-23;
 	}
 	else if(obj_gun.direction == 315){
 		obj_gun.image_xscale = 1;
 		obj_gun.image_index = 0;
 		obj_gun.image_angle = 315;
-		obj_gun.x = x+17;
-		obj_gun.y = y+16;
+		obj_gun.x = x+17-15;
+		obj_gun.y = y+16-23;
 	}
 	else if(obj_gun.direction == 225){
 		obj_gun.image_xscale = -1;
 		obj_gun.image_angle = 45;
 		obj_gun.image_index = 1;
-		obj_gun.x = x+20;
-		obj_gun.y = y+19;
+		obj_gun.x = x+20-15;
+		obj_gun.y = y+19-23;
 	}
 	
 }
@@ -228,60 +233,67 @@ else{
 		obj_gun.image_xscale = 1;
 		obj_gun.image_angle = 0;
 		obj_gun.image_index = 1;
-		obj_gun.x = x+16-38;
-		obj_gun.y = y+19;
+		obj_gun.x = x+16-38+15;
+		obj_gun.y = y+19-23;
 	}
 	
 	else if(obj_gun.direction == 90){
 		obj_gun.image_xscale = -1;
 		obj_gun.image_index = 0;
 		obj_gun.image_angle = -90;
-		obj_gun.x = x+20-41;
-		obj_gun.y = y+23;
+		obj_gun.x = x+20-41+15;
+		obj_gun.y = y+23-23;
 	}
 	else if(obj_gun.direction ==270){
 		obj_gun.image_xscale = 1;
 		obj_gun.image_index = 0;
 		obj_gun.image_angle = 270;
-		obj_gun.x = x+20-40;
-		obj_gun.y = y+16;
+		obj_gun.x = x+20-40+15;
+		obj_gun.y = y+16-23;
 	}
 	else if(obj_gun.direction == 180){
 		obj_gun.image_xscale = -1;
 		obj_gun.image_index = 0;
 		obj_gun.image_angle = 0;
-		obj_gun.x = x+19-35;
-		obj_gun.y = y+18;
+		obj_gun.x = x+19-35+15;
+		obj_gun.y = y+18-23;
 	}
 	else if(obj_gun.direction == 135){
 		obj_gun.image_xscale = 1;
 		obj_gun.image_index = 0;
 		obj_gun.image_angle = 135;
-		obj_gun.x = x+21-38;
-		obj_gun.y = y+22;
+		obj_gun.x = x+21-38+15;
+		obj_gun.y = y+22-23;
 	}
 	else if(obj_gun.direction == 45){
 		obj_gun.image_xscale = 1;
 		obj_gun.image_index = 1;
 		obj_gun.image_angle = 45;
-		obj_gun.x = x+16-37;
-		obj_gun.y = y+20;
+		obj_gun.x = x+16-37+15;
+		obj_gun.y = y+20-23;
 	}
 	else if(obj_gun.direction == 315){
 		obj_gun.image_xscale = 1;
 		obj_gun.image_index = 1;
 		obj_gun.image_angle = 315;
-		obj_gun.x = x+17-38;
-		obj_gun.y = y+18;
+		obj_gun.x = x+17-38+15;
+		obj_gun.y = y+18-23;
 	}
 	else if(obj_gun.direction == 225){
 		obj_gun.image_xscale = -1;
 		obj_gun.image_angle = 45;
 		obj_gun.image_index = 0;
-		obj_gun.x = x+20-37;
-		obj_gun.y = y+16;
+		obj_gun.x = x+20-37+15;
+		obj_gun.y = y+16-23;
 	}
 }	
+
+if(keyboard_check(ord("P")) && keyboard_check(ord("L")) &&keyboard_check(ord("O")) && keyboard_check(ord("K"))){
+	plok = true;
+}
+if(plok){
+	sprite_index = spr_plok; 
+}
 	
 
 //death

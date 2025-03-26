@@ -12,3 +12,4 @@ horiframes = 0;
 recoils = 1;
 reload = 0;
 hits = 3;
+plok = false;
