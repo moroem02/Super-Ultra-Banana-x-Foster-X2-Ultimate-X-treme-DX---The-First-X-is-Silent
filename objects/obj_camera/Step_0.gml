@@ -8,15 +8,15 @@ if(!stop){
 		if(x>= 564){
 			stop = true;	
 		}
-		x+= 4;
+		x+= 10;
 	}
 	else if(obj_control.l == 2){
 		if(x>= 1100){
 			stop = true;	
 		}
-		x+= 4;
+		x+= 10;
 	}
-	alarm[0] = 120;
+	alarm[0] = 80;
 }
 
 var lay_id = layer_get_id("Background");

@@ -55,6 +55,7 @@ if(place_meeting(x+hsp,y,obj_wall)){
 if(place_meeting(x,y+vsp,obj_wall)){
 	while(!place_meeting(x,y+sign(vsp),obj_wall)) {
 			y += sign(vsp);
+			
 	}
 	vsp = 0;
 }
@@ -66,6 +67,7 @@ if(!place_meeting(x,y+1,obj_wall)){
 	//in air
 	sprite_index = spr_playerjump;
 	image_speed = 0;
+	
 	
 	if(vsp > 0){
 		image_index = 1;	
@@ -127,6 +129,7 @@ if(keyboard_check(ord("Z")) && reload <= 0){
 	if(obj_gun.direction == 90 && !place_meeting(x,y+20,obj_wall) && recoils > 0){
 		recoils  -=1;	
 		vsp = 7;
+		ground_poun = true;
 	}
 	
 	//diag

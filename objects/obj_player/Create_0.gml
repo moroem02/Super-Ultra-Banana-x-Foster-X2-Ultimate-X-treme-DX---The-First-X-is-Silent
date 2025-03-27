@@ -13,3 +13,4 @@ recoils = 1;
 reload = 0;
 hits = 3;
 plok = false;
+ground_poun = false;
