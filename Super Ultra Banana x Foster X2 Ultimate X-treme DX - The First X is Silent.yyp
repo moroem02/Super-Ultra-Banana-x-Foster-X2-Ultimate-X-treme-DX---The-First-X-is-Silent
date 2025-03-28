@@ -34,6 +34,7 @@
   },
   "name":"Super Ultra Banana x Foster X2 Ultimate X-treme DX - The First X is Silent",
   "resources":[
+    {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"obj_break","path":"objects/obj_break/obj_break.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},

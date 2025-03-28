@@ -10,7 +10,7 @@ else{
 		image_angle	= 0;
 		instance_destroy();
 		repeat(70){
-
+			
 			var inst = instance_create_layer(x,y,"Instances", obj_part_black);	
 			inst.image_xscale = 1.45;
 			inst.image_yscale = 1.6;

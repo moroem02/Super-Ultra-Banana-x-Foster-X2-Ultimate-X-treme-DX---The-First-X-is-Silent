@@ -7,3 +7,8 @@ if(image_xscale < 1){
 		room_goto(rm_map);
 	}
 }
+else{
+	image_xscale = 0;
+	image_yscale = 0;
+	
+}

@@ -7,3 +7,4 @@ levels = [rm_Level_1,rm_Level_2,rm_Level_3];
 global.breakables = [];
 global.doors = [];
 global.resp = 0;
+time = 0;
