@@ -65,6 +65,7 @@
     {"id":{"name":"rm_Level_3","path":"rooms/rm_Level_3/rm_Level_3.yy",},},
     {"id":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},},
     {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
+    {"id":{"name":"rm_tes","path":"rooms/rm_tes/rm_tes.yy",},},
     {"id":{"name":"snd_articwinds","path":"sounds/snd_articwinds/snd_articwinds.yy",},},
     {"id":{"name":"snd_catwav","path":"sounds/snd_catwav/snd_catwav.yy",},},
     {"id":{"name":"snd_death","path":"sounds/snd_death/snd_death.yy",},},
@@ -79,6 +80,7 @@
     {"id":{"name":"snd_wind","path":"sounds/snd_wind/snd_wind.yy",},},
     {"id":{"name":"spr_arrow","path":"sprites/spr_arrow/spr_arrow.yy",},},
     {"id":{"name":"spr_back_hills","path":"sprites/spr_back_hills/spr_back_hills.yy",},},
+    {"id":{"name":"spr_basi","path":"sprites/spr_basi/spr_basi.yy",},},
     {"id":{"name":"spr_break","path":"sprites/spr_break/spr_break.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"spr_cam","path":"sprites/spr_cam/spr_cam.yy",},},
@@ -136,6 +138,7 @@
     {"roomId":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
     {"roomId":{"name":"rm_Level_3","path":"rooms/rm_Level_3/rm_Level_3.yy",},},
     {"roomId":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},},
+    {"roomId":{"name":"rm_tes","path":"rooms/rm_tes/rm_tes.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

@@ -109,7 +109,7 @@ if(hsp != 0){
 if(keyboard_check(ord("Z")) && reload <= 0){
 	audio_play_sound(snd_shoot,2,false);
 	if(obj_gun.direction != 90 && obj_gun.direction != 270){
-		var inst = instance_create_layer(obj_gun.x +sign(obj_gun.image_xscale)*15, obj_gun.y-5, "Instances", obj_bullet);
+		var inst = instance_create_layer(obj_gun.x +sign(obj_gun.image_xscale)*15, obj_gun.y-1, "Instances", obj_bullet);
 	}
 	else{
 		var inst = instance_create_layer(x , obj_gun.y-5, "Instances", obj_bullet);

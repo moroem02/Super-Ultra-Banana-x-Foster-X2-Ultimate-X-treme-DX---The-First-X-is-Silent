@@ -1,3 +1,3 @@
 //@description enemy crewqat
 
-speed = 2.5;
+speed = 1;
