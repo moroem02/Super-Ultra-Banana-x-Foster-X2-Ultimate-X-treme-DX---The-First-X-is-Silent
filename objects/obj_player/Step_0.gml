@@ -9,8 +9,18 @@ var key_right = keyboard_check(vk_right);
 var key_jump = keyboard_check_pressed(vk_space);
 //calc ulate movement
 
+var _move = 0;
 
-var _move = key_right - key_left;
+if(mt>0.1){
+	_move = key_right - key_left;
+}
+
+if(key_left||key_right||key_jump){
+	mt += 0.05;	
+}
+else{
+	mt = 0;
+}
 
 if(horiframes == 0 || place_meeting(x,y+5,obj_wall)){
 	hsp = _move * walksp;

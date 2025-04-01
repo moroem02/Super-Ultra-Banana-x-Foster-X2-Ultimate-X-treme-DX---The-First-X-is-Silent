@@ -14,3 +14,4 @@ reload = 0;
 hits = 1;
 plok = false;
 ground_poun = false;
+mt = 0;
