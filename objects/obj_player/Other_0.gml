@@ -1,3 +1,3 @@
-if(y > room_height){
+if(y >= room_height){
 	instance_destroy();
 }

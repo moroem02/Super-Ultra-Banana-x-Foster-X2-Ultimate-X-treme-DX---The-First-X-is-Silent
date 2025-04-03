@@ -1,3 +1,4 @@
 // @desc - destroy bullet whenm out of bounds
-
-instance_destroy();
+if(distance_to_object(obj_player) > 100){
+	instance_destroy();
+}
