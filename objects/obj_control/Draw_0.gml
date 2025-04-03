@@ -6,9 +6,9 @@ if(instance_number(obj_player) != 0){
 
 	
 	//health
-	//for(var i = 0; i < obj_player.hits; i++){
-		//draw_sprite(spr_health,0,vx+15+(i*15),vy+370);
-	//}
+	for(var i = 0; i < obj_player.hits; i++){
+		draw_sprite(spr_health,0,vx+15+(i*15),vy+370);
+	}
 
 }
 

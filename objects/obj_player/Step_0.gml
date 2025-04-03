@@ -313,3 +313,4 @@ if(plok){
 if(hits < 1){
 	instance_destroy();	
 }
+iframe -= 1;
