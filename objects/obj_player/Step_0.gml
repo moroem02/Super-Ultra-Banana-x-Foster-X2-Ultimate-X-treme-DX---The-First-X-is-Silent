@@ -71,6 +71,7 @@ if(place_meeting(x,y+vsp,obj_wall)){
 			y += sign(vsp);
 			
 	}
+	ground_poun = false;
 	last = 0;
 	vsp = 0;
 }
@@ -321,3 +322,17 @@ if(hits < 1){
 	instance_destroy();	
 }
 iframe -= 1;
+
+if(ground_poun){
+	if(instance_number(obj_groundPound) == 0){
+		instance_create_layer(x,y+8,"Instances",obj_groundPound);	
+	}
+	obj_groundPound.x = x;
+	obj_groundPound.y = y+8;
+	
+}
+else if(instance_number(obj_groundPound) > 0){
+	with(obj_groundPound){
+		instance_destroy();
+	}
+}
