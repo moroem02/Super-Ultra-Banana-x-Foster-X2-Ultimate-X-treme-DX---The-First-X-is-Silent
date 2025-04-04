@@ -37,6 +37,10 @@ else{
 if(horiframes/1.2 <= 1){
 	vsp += grv;
 }
+else if(vsp < 0){
+	
+	vsp += grv/1.5;	
+}
 //Jump
 
 
@@ -67,6 +71,7 @@ if(place_meeting(x,y+vsp,obj_wall)){
 			y += sign(vsp);
 			
 	}
+	last = 0;
 	vsp = 0;
 }
 y += vsp;
@@ -167,15 +172,17 @@ if(keyboard_check(ord("Z")) && reload <= 0){
 	}
 	
 	
-	if(obj_gun.direction == 225 && place_meeting(x,y+20,obj_wall) && recoils > 0){
+	if(obj_gun.direction == 225 &&(place_meeting(x,y+20,obj_wall) || place_meeting(x-20,y,obj_wall)) && last != 1){
 		vsp = -6;
 		y-= 5;
 		horiframes = 15;
+		last = 1;
 	}
-	if(obj_gun.direction == 315 && place_meeting(x,y+20,obj_wall) && recoils > 0){
+	if(obj_gun.direction == 315 && (place_meeting(x,y+20,obj_wall) || place_meeting(x+20,y,obj_wall))&& last != 2){
 		vsp = -6;
 		y-= 5;
 		horiframes = -15;
+		last = 2;
 	}
 	reload = 10;
 }

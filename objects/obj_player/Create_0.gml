@@ -16,3 +16,4 @@ plok = false;
 ground_poun = false;
 mt = 0;
 iframe = 0;
+last = 0;
