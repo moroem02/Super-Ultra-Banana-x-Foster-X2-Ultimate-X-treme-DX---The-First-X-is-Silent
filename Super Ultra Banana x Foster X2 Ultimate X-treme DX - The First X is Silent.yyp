@@ -37,6 +37,7 @@
   "name":"Super Ultra Banana x Foster X2 Ultimate X-treme DX - The First X is Silent",
   "resources":[
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
+    {"id":{"name":"obj_basic","path":"objects/obj_basic/obj_basic.yy",},},
     {"id":{"name":"obj_break","path":"objects/obj_break/obj_break.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
@@ -47,6 +48,7 @@
     {"id":{"name":"obj_cut","path":"objects/obj_cut/obj_cut.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
+    {"id":{"name":"obj_engun","path":"objects/obj_engun/obj_engun.yy",},},
     {"id":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},},
     {"id":{"name":"obj_groundPound","path":"objects/obj_groundPound/obj_groundPound.yy",},},
     {"id":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},},
@@ -90,6 +92,7 @@
     {"id":{"name":"spr_die","path":"sprites/spr_die/spr_die.yy",},},
     {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},},
     {"id":{"name":"spr_employee","path":"sprites/spr_employee/spr_employee.yy",},},
+    {"id":{"name":"spr_enarm","path":"sprites/spr_enarm/spr_enarm.yy",},},
     {"id":{"name":"spr_enemy_run","path":"sprites/spr_enemy_run/spr_enemy_run.yy",},},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},},
     {"id":{"name":"spr_evil","path":"sprites/spr_evil/spr_evil.yy",},},
