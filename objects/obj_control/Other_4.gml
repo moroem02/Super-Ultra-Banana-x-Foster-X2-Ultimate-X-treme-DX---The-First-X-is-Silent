@@ -13,6 +13,10 @@ else if(room == rm_Level_3){
 	global.respawn_x = 256;
 	audio_play_sound(snd_wind,1,true);
 }
+else if(room == rm_Level_4){
+	global.respawn_x = 120;
+	global.respawn_y = 104;
+}
 
 if(room == rm_start || room = rm_end){
 	audio_play_sound(snd_catwav,1,true);	

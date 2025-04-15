@@ -10,6 +10,11 @@ else{
 }
 if(reload <=0){
 	var inst = instance_create_layer(x,y,"Instances",obj_bullet);
-	inst.direction = image_angle;
+	inst.direction = image_angle +(90 - sign(image_xscale) *90);
+	
 	reload = 45;	
 }
+if(breakd){
+	reload = 500;
+}
+	
