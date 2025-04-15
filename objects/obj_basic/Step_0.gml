@@ -23,7 +23,7 @@ else{
 }
 
 
-if(place_meeting(x+sign(speed),y+30,obj_wall)){
+if(place_meeting(x+speed,y+30,obj_wall)){
 		speed *= -1;
 }
 
@@ -35,7 +35,10 @@ if(speed != 0){
 image_angle += rspeed;
 
 if(gun.breakd){
-	speed = 3 * sign(image_xscale);
+	sprite_index = spr_basirun;
+	if(speed = 0){
+		speed = 3 * sign(image_xscale);
+	}
 	if(image_xscale < 0){
 		instance_create_layer(x-6, y-8,"Instances",obj_gravitypart);
 	}
