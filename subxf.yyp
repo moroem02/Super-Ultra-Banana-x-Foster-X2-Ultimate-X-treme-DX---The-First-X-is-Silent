@@ -87,6 +87,7 @@
     {"id":{"name":"spr_back_hills","path":"sprites/spr_back_hills/spr_back_hills.yy",},},
     {"id":{"name":"spr_basi","path":"sprites/spr_basi/spr_basi.yy",},},
     {"id":{"name":"spr_basirun","path":"sprites/spr_basirun/spr_basirun.yy",},},
+    {"id":{"name":"spr_breach","path":"sprites/spr_breach/spr_breach.yy",},},
     {"id":{"name":"spr_break","path":"sprites/spr_break/spr_break.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"spr_cam","path":"sprites/spr_cam/spr_cam.yy",},},

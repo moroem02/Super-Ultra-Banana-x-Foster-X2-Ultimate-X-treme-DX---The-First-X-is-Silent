@@ -23,13 +23,13 @@ else{
 }
 
 
-if(place_meeting(x+speed,y+30,obj_wall)){
+if(place_meeting(x+speed,y,obj_wall)){
 		speed *= -1;
 }
 
 
 if(speed != 0){
-	image_xscale = -sign(speed);
+	image_xscale = sign(speed);
 	
 }
 image_angle += rspeed;
