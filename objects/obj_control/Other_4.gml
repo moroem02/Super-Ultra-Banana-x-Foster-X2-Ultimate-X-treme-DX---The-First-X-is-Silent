@@ -15,7 +15,7 @@ else if(room == rm_Level_3){
 }
 else if(room == rm_Level_4){
 	global.respawn_x = 120;
-	global.respawn_y = 104;
+	global.respawn_y = 204;
 }
 
 if(room == rm_start || room = rm_end){

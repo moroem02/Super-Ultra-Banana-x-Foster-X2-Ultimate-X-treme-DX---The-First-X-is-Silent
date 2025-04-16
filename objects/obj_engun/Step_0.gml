@@ -1,5 +1,5 @@
 
-
+//normal
 if(reload<480){
 	reload--;
 }
