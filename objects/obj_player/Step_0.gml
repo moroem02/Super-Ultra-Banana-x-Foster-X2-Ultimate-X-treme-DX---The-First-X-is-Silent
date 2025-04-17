@@ -336,3 +336,4 @@ else if(instance_number(obj_groundPound) > 0){
 		instance_destroy();
 	}
 }
+iframe -= 1;

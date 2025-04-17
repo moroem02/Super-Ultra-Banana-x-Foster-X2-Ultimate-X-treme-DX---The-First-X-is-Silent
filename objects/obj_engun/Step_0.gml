@@ -13,10 +13,8 @@ else{
 
 if(reload <=0){
 	if(image_index == 0){
-		var inst = instance_create_layer(x,y-3,"Instances",obj_bullet);
+		var inst = instance_create_layer(x,y,"Instances",obj_bullet);
 		inst.direction = image_angle +(90 - sign(image_xscale) *90);
-		inst.image_xscale = 0.9;
-		inst.image_yscale = 0.9;
 	}
 	reload = 55;	
 }
