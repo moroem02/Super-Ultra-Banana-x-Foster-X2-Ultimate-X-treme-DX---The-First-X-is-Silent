@@ -46,3 +46,6 @@ global.resp --;
 if(room == rm_Level_1 && !(audio_is_playing(snd_lab1) || audio_is_playing(snd_lab2))){
 	audio_play_sound(snd_lab2, 1, true)	
 }
+if(keyboard_check(ord("B"))&&keyboard_check(ord("A"))&&keyboard_check(ord("L")) && instance_number(obj_beachBall) < 1){
+	instance_create_layer(obj_player.x,obj_player.y-40,"Instances",obj_beachBall);
+}
