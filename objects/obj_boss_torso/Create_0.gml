@@ -8,3 +8,5 @@ right_leg = instance_nearest(x+16,y+5,obj_leg_boss);
 left_arm = instance_nearest(x+5,y,obj_boss_arm);
 right_arm = instance_nearest(x+22,y,obj_boss_arm);
 iframe = 0;
+vsp = 0;
+blood = false;
