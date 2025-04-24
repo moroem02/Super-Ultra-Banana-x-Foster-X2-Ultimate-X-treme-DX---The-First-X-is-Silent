@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_boss_torso",
+  "%Name":"obj_boss_arm",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_boss_torso",
+  "name":"obj_boss_arm",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_boss_bro",
-    "path":"sprites/spr_boss_bro/spr_boss_bro.yy",
+    "name":"spr_boss_bro_arm",
+    "path":"sprites/spr_boss_bro_arm/spr_boss_bro_arm.yy",
   },
   "spriteMaskId":null,
   "visible":true,

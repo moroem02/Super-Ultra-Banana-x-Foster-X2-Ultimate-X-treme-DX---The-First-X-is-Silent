@@ -1,6 +1,5 @@
-if(parent.speed!= 0){
-	image_angle += 6 * sign(image_xscale);
-	
+if(thro){
+	image_angle+= 15;
 }
 else{
 	image_angle = 0;

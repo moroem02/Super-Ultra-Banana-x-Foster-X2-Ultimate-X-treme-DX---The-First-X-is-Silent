@@ -17,6 +17,10 @@ else if(room == rm_Level_4){
 	global.respawn_x = 120;
 	global.respawn_y = 204;
 }
+else if(room == rm_boss1){
+	global.respawn_x = 144;
+	global.respawn_y = 320;
+}
 
 if(room == rm_start || room = rm_end){
 	audio_play_sound(snd_catwav,1,true);	

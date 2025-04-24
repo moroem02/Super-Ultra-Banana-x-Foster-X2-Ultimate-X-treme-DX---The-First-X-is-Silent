@@ -1,4 +1,10 @@
 health = 5;
 phase = 1;
 timer = 0;
-speed = 3;
+speed = 4;
+spd= 6;
+left_leg = instance_nearest(x,y,obj_leg_boss);
+right_leg = instance_nearest(x+16,y+5,obj_leg_boss);
+left_arm = instance_nearest(x+5,y,obj_boss_arm);
+right_arm = instance_nearest(x+22,y,obj_boss_arm);
+iframe = 0;

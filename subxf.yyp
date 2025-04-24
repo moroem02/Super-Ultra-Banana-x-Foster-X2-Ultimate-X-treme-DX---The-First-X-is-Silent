@@ -40,6 +40,7 @@
     {"id":{"name":"obj_basic","path":"objects/obj_basic/obj_basic.yy",},},
     {"id":{"name":"obj_beachBall","path":"objects/obj_beachBall/obj_beachBall.yy",},},
     {"id":{"name":"obj_beam","path":"objects/obj_beam/obj_beam.yy",},},
+    {"id":{"name":"obj_boss_arm","path":"objects/obj_boss_arm/obj_boss_arm.yy",},},
     {"id":{"name":"obj_boss_torso","path":"objects/obj_boss_torso/obj_boss_torso.yy",},},
     {"id":{"name":"obj_break","path":"objects/obj_break/obj_break.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},

@@ -5,7 +5,7 @@ if(y >= ground_level){
 		inst.direction = i * 8;
 	}
 }
-if((x <50 || x > 500) || y> 288){
+if((x <80 || x > 500) || y> 288){
 	move_bounce_all(true);
 	rot = choose(-2,1,0.5,-0.5,-1,2);
 	

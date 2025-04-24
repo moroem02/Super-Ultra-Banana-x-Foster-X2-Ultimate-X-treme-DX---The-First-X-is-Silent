@@ -1,0 +1,2 @@
+thro = false;
+die = false;
