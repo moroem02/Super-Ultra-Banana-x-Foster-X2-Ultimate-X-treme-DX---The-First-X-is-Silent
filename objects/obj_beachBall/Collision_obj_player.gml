@@ -16,4 +16,5 @@ if(phase <= 0){
 	else{
 		y+=3;
 	}
+	audio_play_sound(snd_bounce,3,false);
 }

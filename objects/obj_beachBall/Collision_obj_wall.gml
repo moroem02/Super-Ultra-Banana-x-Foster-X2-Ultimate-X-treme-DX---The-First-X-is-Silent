@@ -1,4 +1,5 @@
 if(y >= ground_level){
+	audio_play_sound(snd_explosion,2,false);
 	instance_destroy()
 	for (var i = 0; i < 45; i += 1){
 		var inst =  instance_create_layer(x,y, "Instances", obj_bullet);
