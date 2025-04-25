@@ -38,6 +38,16 @@ if(phase ==1){
 	if(instance_number(obj_beachBall) == 0 || timer < 2){
 	timer += random_range(1,3); 
 	}
+	if(health < 4){
+		
+		
+		reload ++;
+		if(reload > 120){
+				reload = 0;
+				instance_create_layer(x+12,y+26,"Instances",obj_bananna);
+				
+		}
+	}
 	if(health == 5){
 	left_leg.x = x+12;
 	right_leg.x = x + 15;
@@ -72,6 +82,7 @@ if(phase ==1){
 		}
 	}
 	else if(health == 1){
+		
 		right_leg.die = true;
 		if(blood){
 		instance_create_layer(x+23, y+15,"Instances",obj_gravitypart);

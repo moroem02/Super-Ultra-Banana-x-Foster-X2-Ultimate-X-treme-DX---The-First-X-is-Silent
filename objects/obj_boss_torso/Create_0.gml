@@ -9,4 +9,5 @@ left_arm = instance_nearest(x+5,y,obj_boss_arm);
 right_arm = instance_nearest(x+22,y,obj_boss_arm);
 iframe = 0;
 vsp = 0;
-blood =!false;
+blood = !false;
+reload = 0;

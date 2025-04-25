@@ -49,3 +49,10 @@ if(room == rm_Level_1 && !(audio_is_playing(snd_lab1) || audio_is_playing(snd_la
 if(keyboard_check(ord("B"))&&keyboard_check(ord("A"))&&keyboard_check(ord("L")) && instance_number(obj_beachBall) < 1){
 	instance_create_layer(obj_player.x,obj_player.y-40,"Instances",obj_beachBall);
 }
+if(room == rm_boss1){
+	angel ++;
+	if(angel> 600){
+		instance_create_layer(0,-60,"Instances",obj_angel);
+		angel = 0;
+	}
+}
