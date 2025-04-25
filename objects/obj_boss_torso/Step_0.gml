@@ -18,7 +18,7 @@ if(phase ==1){
 		right_arm.thro = true;
 	}
 	
-	if(instance_number(obj_beachBall) != 0 && abs (x - obj_beachBall.x) <10){
+	if(instance_number(obj_beachBall) != 0 && abs (x - obj_beachBall.x) <7){
 		x =	obj_beachBall.x;
 	}
 	if(x > 340 &&x < 612 && instance_number(obj_beachBall) != 0 && distance_to_object(obj_beachBall) > 50){
