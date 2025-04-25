@@ -17,14 +17,11 @@ if(phase ==1){
 		left_arm.thro = true;
 		right_arm.thro = true;
 	}
-	else{
-		left_arm.thro = false;
-		right_arm.thro = false;
-		
+	
+	if(instance_number(obj_beachBall) != 0 && x == obj_beachBall.x){
+		x =	obj_beachBall.x;
 	}
-	
-	
-	if(x > 340 &&x < 612 && instance_number(obj_beachBall) != 0 && distance_to_object(obj_beachBall) > 100){
+	if(x > 340 &&x < 612 && instance_number(obj_beachBall) != 0 && distance_to_object(obj_beachBall) > 50){
 		if(obj_beachBall.x < x){
 			speed = -spd;
 		}

@@ -1,5 +1,10 @@
 if(thro){
 	image_angle+= 15;
+	throtime ++;
+	if(throtime > 120){
+		thro = false;
+		throtime = 0;
+	}
 }
 else if(!die){
 	image_angle = 0;

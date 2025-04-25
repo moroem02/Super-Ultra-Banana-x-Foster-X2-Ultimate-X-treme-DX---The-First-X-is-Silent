@@ -1,6 +1,6 @@
-speed = -4;
-vsp = - 7;
-if(random_range(1,2) == 1){
-	
+speed = -3;
+vsp = - 8;
+if(choose(1,2) == 2){
+	image_index = 1;
 		
-}image_index = 1;
+}
