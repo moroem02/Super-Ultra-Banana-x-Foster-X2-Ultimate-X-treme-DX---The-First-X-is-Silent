@@ -18,6 +18,3 @@ if(phase <= 0){
 	}
 	audio_play_sound(snd_bounce,3,false);
 }
-if(x<30){
-	x+=10;
-}

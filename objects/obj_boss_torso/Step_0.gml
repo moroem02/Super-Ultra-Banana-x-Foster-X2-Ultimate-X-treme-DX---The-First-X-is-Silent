@@ -18,8 +18,8 @@ if(phase ==1){
 		right_arm.thro = true;
 	}
 	
-	if(instance_number(obj_beachBall) != 0 && abs (x - obj_beachBall.x) <3){
-		if(random_range(1,5) != 3){
+	if(instance_number(obj_beachBall) != 0 && abs (x - obj_beachBall.x) <6){
+		if(speed >= obj_beachBall.speed){
 			x =	obj_beachBall.x;
 		}
 		else{

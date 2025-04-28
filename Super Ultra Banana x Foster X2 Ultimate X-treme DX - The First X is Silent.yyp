@@ -38,6 +38,7 @@
   "resources":[
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"obj_angel","path":"objects/obj_angel/obj_angel.yy",},},
+    {"id":{"name":"obj_ba","path":"objects/obj_ba/obj_ba.yy",},},
     {"id":{"name":"obj_bananna","path":"objects/obj_bananna/obj_bananna.yy",},},
     {"id":{"name":"obj_basic","path":"objects/obj_basic/obj_basic.yy",},},
     {"id":{"name":"obj_beachBall","path":"objects/obj_beachBall/obj_beachBall.yy",},},
@@ -97,6 +98,7 @@
     {"id":{"name":"spr_angel","path":"sprites/spr_angel/spr_angel.yy",},},
     {"id":{"name":"spr_arrow","path":"sprites/spr_arrow/spr_arrow.yy",},},
     {"id":{"name":"spr_back_hills","path":"sprites/spr_back_hills/spr_back_hills.yy",},},
+    {"id":{"name":"spr_banan","path":"sprites/spr_banan/spr_banan.yy",},},
     {"id":{"name":"spr_bananna","path":"sprites/spr_bananna/spr_bananna.yy",},},
     {"id":{"name":"spr_basi","path":"sprites/spr_basi/spr_basi.yy",},},
     {"id":{"name":"spr_basirun","path":"sprites/spr_basirun/spr_basirun.yy",},},

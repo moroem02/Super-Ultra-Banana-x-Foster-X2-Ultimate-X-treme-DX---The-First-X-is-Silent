@@ -1,15 +1,1 @@
-
-
-if(bbox_left < 0 or bbox_right > room_width){
-	x = clamp(x, 0 + sprite_xoffset, room_width - sprite_xoffset);
-	hspeed *= -1	
-}
-if(bbox_top < 0){
-	y = clamp(y, 0 + sprite_yoffset, room_height - sprite_yoffset);
-	vspeed *= -1;	
-}
-if(bbox_top > room_height){
-	instance_destroy();
-	instance_create_layer(xstart, ystart, "Instances", obj_ball);
-}
-
+direction = random_range(210,330);

@@ -37,6 +37,13 @@ if(room !=rm_end && room != rm_start  && room != rm_intro &&room != rm_map){
 		}
 		instance_create_layer(global.respawn_x,global.respawn_y, "Instances", obj_gun);	
 		instance_create_layer(global.respawn_x,global.respawn_y, "Instances", obj_player);	
+		if(instance_number(obj_boss_torso) > 0){
+			obj_boss_torso.health = 5;
+			obj_boss_torso.left_leg.die = false;
+			obj_boss_torso.right_leg.die = false;
+			obj_boss_torso.left_arm.die = false;
+			obj_boss_torso.right_arm.die = false;	
+		}
 		
 			
 	}
