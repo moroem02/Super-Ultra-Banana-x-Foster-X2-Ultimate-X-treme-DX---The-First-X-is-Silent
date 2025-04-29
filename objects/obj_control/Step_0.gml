@@ -1,5 +1,13 @@
-if(room !=rm_end && room != rm_start  && room != rm_intro &&room != rm_map){
+if(room !=rm_end && room != rm_start  && room != rm_intro &&room != rm_map && room != rm_bosscut){
 	if(instance_number(obj_player) == 0){
+		if(room == rm_boss1){
+			obj_boss_torso.health = 5;
+			obj_boss_torso.phase = 1;
+			obj_boss_torso.left_leg.die = false;
+			obj_boss_torso.right_leg.die = false;
+			obj_boss_torso.left_arm.die = false;
+			obj_boss_torso.right_arm.die = false;	
+		}
 		global.resp = 5;
 		
 		for(var i = 0; i < array_length(global.breakables); i+= 5){
@@ -35,15 +43,10 @@ if(room !=rm_end && room != rm_start  && room != rm_intro &&room != rm_map){
 			obj_crusher.go = false;
 			obj_crusher.x = -64
 		}
+		
 		instance_create_layer(global.respawn_x,global.respawn_y, "Instances", obj_gun);	
 		instance_create_layer(global.respawn_x,global.respawn_y, "Instances", obj_player);	
-		if(instance_number(obj_boss_torso) > 0){
-			obj_boss_torso.health = 5;
-			obj_boss_torso.left_leg.die = false;
-			obj_boss_torso.right_leg.die = false;
-			obj_boss_torso.left_arm.die = false;
-			obj_boss_torso.right_arm.die = false;	
-		}
+		
 		
 			
 	}

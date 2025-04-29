@@ -9,3 +9,4 @@ global.doors = [];
 global.resp = 0;
 time = 0;
 angel = 0;
+
