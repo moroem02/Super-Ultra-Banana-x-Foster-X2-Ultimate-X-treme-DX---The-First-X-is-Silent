@@ -8,7 +8,7 @@ if(thro){
 }
 else if(!die){
 	image_angle = 0;
-	image_xscale = 1;
+	image_xscale = 1 * sign(image_xscale);
 	image_yscale = 1;
 }
 

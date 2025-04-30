@@ -34,13 +34,10 @@ else{
 	horiframes -= 1;
 	hsp = 9;	
 }
-if(horiframes/1.4 <= 1){
+if(horiframes/1.2 <= 1){
 	vsp += grv;
 }
-else if(vsp < 0){
-	
-	vsp += grv/1.5;	
-}
+
 //Jump
 
 

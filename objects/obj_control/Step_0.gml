@@ -1,13 +1,6 @@
 if(room !=rm_end && room != rm_start  && room != rm_intro &&room != rm_map && room != rm_bosscut){
 	if(instance_number(obj_player) == 0){
-		if(room == rm_boss1){
-			obj_boss_torso.health = 5;
-			obj_boss_torso.phase = 1;
-			obj_boss_torso.left_leg.die = false;
-			obj_boss_torso.right_leg.die = false;
-			obj_boss_torso.left_arm.die = false;
-			obj_boss_torso.right_arm.die = false;	
-		}
+	
 		global.resp = 5;
 		
 		for(var i = 0; i < array_length(global.breakables); i+= 5){
@@ -56,8 +49,12 @@ global.resp --;
 if(room == rm_Level_1 && !(audio_is_playing(snd_lab1) || audio_is_playing(snd_lab2))){
 	audio_play_sound(snd_lab2, 1, true)	
 }
-if(keyboard_check(ord("B"))&&keyboard_check(ord("A"))&&keyboard_check(ord("L")) && instance_number(obj_beachBall) < 1){
-	instance_create_layer(obj_player.x,obj_player.y-40,"Instances",obj_beachBall);
+if(keyboard_check(ord("B"))&&keyboard_check(ord("A"))&&keyboard_check(ord("L")) && instance_number(obj_beachBall) < 6){
+	instance_create_layer(obj_player.x+5,obj_player.y-440,"Instances",obj_beachBall);
+}
+
+if(keyboard_check(ord("B"))&&keyboard_check(ord("A"))&&keyboard_check(ord("N"))){
+	instance_create_layer(obj_player.x+150,obj_player.y+5,"Instances",obj_bananna);
 }
 if(room == rm_boss1){
 	angel ++;
