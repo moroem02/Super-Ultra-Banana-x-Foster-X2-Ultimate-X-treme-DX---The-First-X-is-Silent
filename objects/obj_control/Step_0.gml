@@ -43,6 +43,7 @@ if(room !=rm_end && room != rm_start  && room != rm_intro &&room != rm_map && ro
 		
 			
 	}
+	time += 1;	
 }
 global.resp --;
 

@@ -309,10 +309,17 @@ else{
 if(keyboard_check(ord("P")) && keyboard_check(ord("L")) &&keyboard_check(ord("O")) && keyboard_check(ord("K"))){
 	plok = true;
 }
+if(keyboard_check(ord("G")) && keyboard_check(ord("E")) &&keyboard_check(ord("X"))){
+	gex = true;
+}
 if(plok){
 	sprite_index = spr_plok; 
 }
+if(gex){
 	
+	sprite_index = spr_gex;	
+	obj_gun.image_blend = c_lime;
+}
 
 //death
 if(hits < 1){

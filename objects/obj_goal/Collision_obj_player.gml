@@ -8,4 +8,3 @@ if(obj_control.l >= array_length(obj_control.levels)){
 else{
 	room_goto(rm_map);
 }
-obj_control.time = get_timer();

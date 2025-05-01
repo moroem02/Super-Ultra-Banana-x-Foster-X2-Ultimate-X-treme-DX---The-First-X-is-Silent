@@ -1,1 +1,2 @@
-room_goto(rm_tes);
+//room_goto(rm_tes);
+timar = true;

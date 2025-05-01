@@ -12,34 +12,39 @@ if(phase ==1){
 		
 	
 		
-	
+	if(x<obj_player.x){
+		speed = spd;
+	}
+	else{
 	if(timer< 0){
 		left_arm.thro = true;
 		right_arm.thro = true;
 	}
 	
-	if(instance_number(obj_beachBall) != 0 && abs (x - obj_beachBall.x) <6){
-		if(speed >= obj_beachBall.speed){
-			x =	obj_beachBall.x;
+		if(instance_number(obj_beachBall) != 0 && abs (x - obj_beachBall.x) <6){
+			if(speed >= obj_beachBall.speed){
+				x =	obj_beachBall.x;
+			}
+			else{
+				x-=4;
+			}
 		}
-		else{
-			x-=4;
+		if(x > 340 &&x < 612 && instance_number(obj_beachBall) != 0 && distance_to_object(obj_beachBall) > 50){
+			if(obj_beachBall.x < x){
+				speed = -spd;
+			}
+			else{
+				speed = spd;
+			}
+		}
+		else if(place_meeting(x+speed,y,obj_wall)){
+			speed *= -1;
+		}
+		if(instance_number(obj_beachBall) == 0 || timer < 2){
+		timer += random_range(1,3); 
 		}
 	}
-	if(x > 340 &&x < 612 && instance_number(obj_beachBall) != 0 && distance_to_object(obj_beachBall) > 50){
-		if(obj_beachBall.x < x){
-			speed = -spd;
-		}
-		else{
-			speed = spd;
-		}
-	}
-	else if(place_meeting(x+speed,y,obj_wall)){
-		speed *= -1;
-	}
-	if(instance_number(obj_beachBall) == 0 || timer < 2){
-	timer += random_range(1,3); 
-	}
+	
 	if(health < 4){
 		
 		

@@ -10,3 +10,4 @@ global.resp = 0;
 time = 0;
 angel = 0;
 
+timar = false;

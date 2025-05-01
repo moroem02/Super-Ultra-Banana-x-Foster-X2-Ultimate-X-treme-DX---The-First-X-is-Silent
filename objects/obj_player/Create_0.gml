@@ -13,6 +13,7 @@ recoils = 1;
 reload = 0;
 hits = 3;
 plok = false;
+gex = false;
 ground_poun = false;
 mt = 0;
 iframe = 0;
