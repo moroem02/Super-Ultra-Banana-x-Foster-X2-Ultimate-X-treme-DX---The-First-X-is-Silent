@@ -6,7 +6,6 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_40F1C166","path":"rooms/rm_Level_2/rm_Level_2.yy",},
     {"name":"inst_7754DA03","path":"rooms/rm_Level_2/rm_Level_2.yy",},
     {"name":"inst_75040C2D","path":"rooms/rm_Level_2/rm_Level_2.yy",},
     {"name":"inst_5468F7E7","path":"rooms/rm_Level_2/rm_Level_2.yy",},
@@ -303,6 +302,7 @@
     {"name":"inst_71AF144E","path":"rooms/rm_Level_2/rm_Level_2.yy",},
     {"name":"inst_2495FD15","path":"rooms/rm_Level_2/rm_Level_2.yy",},
     {"name":"inst_17FF0A41","path":"rooms/rm_Level_2/rm_Level_2.yy",},
+    {"name":"inst_40F1C166","path":"rooms/rm_Level_2/rm_Level_2.yy",},
   ],
   "isDnd":false,
   "layers":[
