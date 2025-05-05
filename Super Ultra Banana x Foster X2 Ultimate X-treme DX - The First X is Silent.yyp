@@ -80,6 +80,7 @@
     {"id":{"name":"rm_Level_3","path":"rooms/rm_Level_3/rm_Level_3.yy",},},
     {"id":{"name":"rm_Level_4","path":"rooms/rm_Level_4/rm_Level_4.yy",},},
     {"id":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},},
+    {"id":{"name":"rm_pause","path":"rooms/rm_pause/rm_pause.yy",},},
     {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"id":{"name":"rm_tes","path":"rooms/rm_tes/rm_tes.yy",},},
     {"id":{"name":"snd_articwinds","path":"sounds/snd_articwinds/snd_articwinds.yy",},},
@@ -141,6 +142,7 @@
     {"id":{"name":"spr_net","path":"sprites/spr_net/spr_net.yy",},},
     {"id":{"name":"spr_particle_black","path":"sprites/spr_particle_black/spr_particle_black.yy",},},
     {"id":{"name":"spr_particle_green","path":"sprites/spr_particle_green/spr_particle_green.yy",},},
+    {"id":{"name":"spr_pause","path":"sprites/spr_pause/spr_pause.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_playera","path":"sprites/spr_playera/spr_playera.yy",},},
     {"id":{"name":"spr_playerjump","path":"sprites/spr_playerjump/spr_playerjump.yy",},},
@@ -179,6 +181,7 @@
     {"roomId":{"name":"rm_Level_4","path":"rooms/rm_Level_4/rm_Level_4.yy",},},
     {"roomId":{"name":"rm_boss1","path":"rooms/rm_boss1/rm_boss1.yy",},},
     {"roomId":{"name":"rm_bosscut","path":"rooms/rm_bosscut/rm_bosscut.yy",},},
+    {"roomId":{"name":"rm_pause","path":"rooms/rm_pause/rm_pause.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

@@ -9,5 +9,7 @@ global.doors = [];
 global.resp = 0;
 time = 0;
 angel = 0;
-
+lastroom = 0;
 timar = false;
+lastx =0;
+lasty=0;
