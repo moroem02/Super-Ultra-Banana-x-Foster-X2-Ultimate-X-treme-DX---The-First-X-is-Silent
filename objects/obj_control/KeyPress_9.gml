@@ -8,9 +8,9 @@ if(room!=rm_pause){
 		lastx=0;
 		lasty = 0;	
 	}
-	room_goto(rm_pause);
+	//room_goto(rm_pause);
 }
 else{
-	room_goto(lastroom);
+	//room_goto(lastroom);
 	
 }
