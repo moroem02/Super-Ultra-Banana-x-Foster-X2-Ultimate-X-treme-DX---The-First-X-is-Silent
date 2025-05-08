@@ -17,7 +17,8 @@ if(room == rm_end){
 	
 	
 }
-if(timar){
+if(timar && room != rm_end){
+	draw_set_font(font3);
 	var vx = camera_get_view_x(view_camera[1]);
 	var vy = camera_get_view_y(view_camera[1]);
 

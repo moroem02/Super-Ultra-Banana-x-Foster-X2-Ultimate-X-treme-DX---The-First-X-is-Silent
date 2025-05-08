@@ -16,6 +16,13 @@ if(!stop){
 		}
 		x+= 10;
 	}
+	else{
+		var lay_id = layer_get_id("Background");
+		var back_id = layer_background_get_id(lay_id);
+		layer_background_sprite(back_id, spr_banan)
+		layer_background_stretch(back_id, true)
+		stop = true;
+	}
 	alarm[0] = 80;
 }
 
