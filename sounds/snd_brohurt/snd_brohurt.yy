@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"snd_brohurt",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":0,
-  "bitRate":16,
+  "channelFormat":2,
   "compression":0,
+  "compressionQuality":0,
   "conversionMode":0,
-  "duration":0.29025,
+  "duration":0.29027212,
+  "exportDir":"",
   "name":"snd_brohurt",
   "parent":{
     "name":"Sounds",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":5512,
   "soundFile":"snd_brohurt.wav",
-  "type":2,
   "volume":0.76,
 }

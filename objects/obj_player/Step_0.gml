@@ -70,7 +70,9 @@ if(place_meeting(x,y+vsp,obj_wall)){
 	}
 	ground_poun = false;
 	last = 0;
-	vsp = 0;
+	if(instance_nearest(x,y,obj_wall).passthrough == false){
+		vsp = 0;
+	}
 }
 y += vsp;
 x += hsp;
